@@ -21,6 +21,14 @@ d:\mongodb-win32-x86_64-2008plus-2.6.3\bin>mongod -dbpath ..\data\db
 
 ## Mongo Shell
 
+**Start shell:**
+```
+# by default connection is mongodb://127.0.0.1:27017
+mongo
+mongo "<PATH>/<DB>" --username <username>
+mongo "<PATH>/<DB>" --username <username> --password <password>
+```
+
 **Hotkeys:**
 ```
 help keys
@@ -31,13 +39,7 @@ ctrl+k delete to the end
 alt + backspase
 ```
 
-**Start shell:**
-```
-# by default connection is mongodb://127.0.0.1:27017
-mongo
-mongo "<PATH>/<DB>" --username <username>
-mongo "<PATH>/<DB>" --username <username> --password <password>
-```
+Global object `db` is a link to the current DB.
 
 **Base:**
 ```
@@ -46,18 +48,11 @@ use newdb
 show collections
 ```
 
-Global object `db` is a link to the current DB.
-
 ### Insert
 
 ```
-doc = {city: "Minsk", population: 1837000}
-db.populdations.insert( doc )
-db.populdations.find()
-{_id: ObjectId(“9a1b2c3”),
-  city: “Minsk”,
-  population: 1837000
-}
+db.collection.insert(doc)
+db.collection.insert({field1: value1, field2: value2})
 ```
 
 ### Read
