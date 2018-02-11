@@ -52,6 +52,7 @@ show collections
 
 ```
 db.collection.insert(doc)
+
 db.collection.insert({field1: value1, field2: value2})
 ```
 
@@ -113,7 +114,7 @@ db.collection.find({array_field: {$all, [1,2,3]}})
 
 Search in object:
 ```
-db.people.find({“object.property”: value})
+db.people.find({"object.property": value})
 ```
 
 #### Fields:
@@ -143,7 +144,6 @@ db.collection.find().sort({_id: 1/-1}).skip(5).limit(2)
 db.collection.update(selector, doc, options)
 ```
 
-**Update:**
 ```
 db.collection.update(selector, {$inc: {field: value}})
 db.collection.update(selector, {$unset: {field: <anything, e.g. true>}})
