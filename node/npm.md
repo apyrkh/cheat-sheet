@@ -15,3 +15,7 @@
 `npm remove <module>`, _alias_ `npm r`
 
 `npm help <command>`
+
+## NPM Registry
+
+`http://registry.npmjs.org/<package>` - _package info_
