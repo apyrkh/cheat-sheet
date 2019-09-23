@@ -2,12 +2,6 @@
 
 Collection of useful cheat sheets
 
-[ssh](ssh.md)
-
-## DB
-
-[Mongo](db/mongo.md)
-
-## NodeJS
-
-[npm](node/npm.md)
+- [db/mongo](db/mongo.md)
+- [node/npm](node/npm.md)
+- [ssh](ssh.md)
