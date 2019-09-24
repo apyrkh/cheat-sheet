@@ -21,7 +21,7 @@ Host github.com
 
 `eval "ssh-agent.exe"` - run ssh agent
 
-`ssh-add .ssh/<id_rsa>` - add key (if name is id_rsa, it's not needed to s`sh-add`)
+`ssh-add .ssh/<id_rsa>` - add key (if name is id_rsa, it's not needed to `ssh-add`)
 
 `ssh -T git@bitbucket.org` - setup host ???
 
